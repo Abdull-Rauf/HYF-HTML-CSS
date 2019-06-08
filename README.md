@@ -1,2 +1,2 @@
 # HYF-HTML-CSS
-MY Home Work
+<a href="https://abdulrauf84.github.io/HYF-HTML-CSS/week1/">Click Here</a> To Veiw My Home Work for Week01.
