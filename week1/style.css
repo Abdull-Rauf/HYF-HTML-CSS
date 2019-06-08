@@ -38,7 +38,10 @@ img {
   }
 .profile-pic{
     display: block;
+    border:5px solid #caccd1 ;
     border-radius: 50px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
     align-content: center;
     align-items: center;
     margin-bottom:10px; 
