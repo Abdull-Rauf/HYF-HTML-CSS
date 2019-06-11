@@ -6,7 +6,7 @@
 
 2. How to create multiple nested directories with one mkdir command.
     //solution
-    mkdir -p /c/Users/unmesh/these/folders/are/just/for/fun
+    mkdir -p c/Users/unmesh/these/folders/are/just/for/fun
 
 3. Execute following commands terminal:
     echo "test" > fun
