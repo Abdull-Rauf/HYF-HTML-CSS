@@ -334,6 +334,7 @@ header{
     width: 100%;
     margin: 0px auto;
     background-color: #00ace6;
+
 }
 section{
     display: flex;
@@ -350,9 +351,6 @@ h1{
      margin: 0px;
 
 }
-
-
-
 ul{
     display: inline;
     list-style: none;
@@ -367,11 +365,18 @@ h2  {
     padding: 10px;
     color: white;
     margin-top: 50px;
-
+    -webkit-animation: h2move 3s ; /* Safari 4.0 - 8.0 */
+    animation: h2move 3s;
 }
+@-webkit-keyframes h2move {
+    0%   {top: 0px; background:#c1e9f7; color: rgb(161, 157, 157); width: 10%;}
+    100% {top: 0px; background: #00bfff; color: white; width: 100%;}
+  }
 main h2:first-child{
     margin-top: 0px;
+    
 }
+
 main h2:nth-child(1){
     padding: 20px;
 }
@@ -464,5 +469,6 @@ li:first-child img{
     margin-left:25% ;
 
 }
+
 
 }
