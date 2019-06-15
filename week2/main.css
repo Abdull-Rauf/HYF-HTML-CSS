@@ -389,10 +389,14 @@ ul li img{
     height: 50%;
     margin-left: 5%;;
 }
+li{
+    transition: transform 1.5s;
+}
 li:hover{
     -webkit-box-shadow:0px 12px 30px -8px rgb(149, 151, 149);
     -moz-box-shadow:0px 12px 30px -8px rgb(149, 151, 149);
     box-shadow:0px 12px 30px -8px rgb(149, 151, 149);
+    transform: scale(1.05);
     
 }
 p{
