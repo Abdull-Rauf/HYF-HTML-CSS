@@ -413,15 +413,12 @@ h3{
 #grid-floats .grid-item {
     width: 23%;
     height: 450px;
+    float: left;
     margin: 1%;
     align-items: center;
     cursor: pointer; 
     overflow: hidden;
     background-color: #FFFFFF
-
-}
-#grid-floats .grid-item{
-    float: left;
 
 }
 #grid-floats .grid-item:first-child
