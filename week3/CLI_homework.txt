@@ -1,0 +1,27 @@
+1. create a directory. Enter a directory. Create an empty file named blank.
+
+	Abduls-Air:week3 abdulrauf$ touch blank
+
+2. Then write the content "Hello" five times to the file greetings.txt.
+
+	//prints Hello 5 times in one line
+	Abduls-Air:week3 abdulrauf$ echo "Hello"{,,,,} > greetings.txt
+
+	//prints Hello 5 times in different lines
+	Abduls-Air:week3 abdulrauf$ n=5
+	Abduls-Air:week3 abdulrauf$ for ((c=1; c<=n; c++)) do echo "Hello" >> greetings.txt ; done
+
+	//Then copy the file greetings.txt and paste its contents into 1.txt, 2.txt, 3.txt, 4.txt and 5.txt.
+	Abduls-Air:week3 abdulrauf$ for i in {1,2,3,4,5}; do cp greetings.txt "$i".txt; done
+
+4.
+	Abduls-Air:week3 abdulrauf$ echo "cat" > pets.txt
+	Abduls-Air:week3 abdulrauf$ echo "dog" >> pets.txt
+	Abduls-Air:week3 abdulrauf$ echo "hamster" >> pets.txt
+	Abduls-Air:week3 abdulrauf$ echo "cat" > commands.txt
+	Abduls-Air:week3 abdulrauf$ echo "ls" >> commands.txt
+	Abduls-Air:week3 abdulrauf$ echo "pwd" >> commands.txt
+
+5. Then find unique strings from these two files pets.txt and commands.txt and store the unique strings in lovelyCommands.txt
+ 
+  Abduls-Air:week3 abdulrauf$ comm -3 pets.txt commands.txt > lovelycommands.txt
