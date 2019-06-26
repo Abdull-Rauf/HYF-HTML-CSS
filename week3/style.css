@@ -121,11 +121,12 @@ main{
     padding:10px;
     width: 33.5%;
     height: 49%;
-    margin: 0 0 0.5% 0.5%;
+    margin: 0 0 0.5% 0.5%;    
     top: 0;
     position: relative;
     color: white;
     cursor: pointer;
+    overflow: hidden;
 }
 .coverStory .cover-logo img{
     width: 400px;
@@ -172,7 +173,7 @@ line-height: 1em;
     margin-right: 20px;
 }
 .main .wrapper{
-    width: 80%;
+    width: 70%;
     margin: 50px auto;
 }
 .latest {
@@ -231,7 +232,7 @@ line-height: 1em;
     position: relative;
 }
 .deals-items{
-     width: 100%;
+      width: 100%;
       margin: auto;
       list-style: none;
       display: -webkit-box;
@@ -302,6 +303,82 @@ line-height: 1em;
     margin: 10px 0px;
 }
 
+.categories{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin: 50px auto;
+    position: relative;
+
+
+}
+.categories a{
+    color: #f42;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+.categories h2{
+    margin:0 0 1% 1%;
+}
+.categories ul{
+    width: 31%;
+    list-style-type: disc;
+    margin: 1%;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    position: relative;
+    list-style-type: none;
+}
+.categories ul li{
+    border-bottom: 1px solid rgb(235, 231, 231);
+    font-size: 13px;
+    padding: 5px;
+}
+.categories ul li:nth-child(2){
+    padding: 0;
+}
+.popular{
+    margin-bottom: 0px; 
+    border-bottom: none;
+    list-style-type: none;
+    padding: 10px;
+    width: 100%;
+    height: 250px;
+    color: white;
+    background-image: linear-gradient(to bottom, rgba(48, 46, 46, 0.1), rgba(1, 2, 6, 8)),url(images/Google.jpg);
+}
+.popular .popularHeader{
+  margin-top:27%;
+}
+.popular h3{
+    font-size: 1.5em;
+    font-family: 'Poppins', sans-serif;
+}
+.post-info{
+    color: #AAAAAA;
+    margin-top: 5px;
+}
+.popularLine{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    list-style-type: none;
+    width: 100%;
+}
+.cat-latest{
+    padding: 20px;
+    width: 100%;
+    background: rgba(255,68,34,.06);
+    color: #ff4422;
+}
 
 
 
@@ -332,6 +409,7 @@ footer{
     align-items: center;
     height: 150px;
     background-color: #131313;
+    z-index: 1;
 
 }
 .footer-social{
@@ -340,12 +418,19 @@ footer{
     width: 100%;
     justify-content: center;
     align-items: center;
+    z-index: 2;
 }
 .footer-social li{
     display: flex;
     list-style-type: none;
     margin: 8px;
     padding: 0;
+    z-index: 1;
+}
+.footer-social li img{
+   width: 40px;
+   height: 40px;
+   z-index: 1;
 }
 .footer-menu{
     list-style-type: none;
